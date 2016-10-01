@@ -1,17 +1,17 @@
 <h1>COKE ZERO FINDER</h1>
 
+<%= form_tag(create_coke_path, method: "post") do %>
+<%= label_tag(:q, "Enter Address:") %>
+<%= text_field_tag(:q) %>
+<%= submit_tag("Find Coke Zero") %>
+<% end %>
+
 <% if @address %>
-<h3>The closest Coke Zero to <%= @address %> is at:</h3>
+<h3>The closest Coke Zero to <%= @address %> is sold at:</h3>
 <ul>
   <% @coke_dealers.businesses.each do |result| %>
   <li><%= result.name %></li>
   <% end %>
 </ul>
 
-<% end %>
-
-<%= form_tag(create_coke_path, method: "post") do %>
-<%= label_tag(:q, "Enter Address:") %>
-<%= text_field_tag(:q) %>
-<%= submit_tag("Find Coke Zero") %>
 <% end %>
