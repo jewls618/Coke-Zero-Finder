@@ -7,11 +7,10 @@
 <% end %>
 
 <% if @address %>
-<h3>The closest Coke Zero to <%= @address %> is sold at:</h3>
-<ul>
-  <% @coke_dealers.businesses.each do |result| %>
-  <li><%= result.name %></li>
+  <h3>The closest Coke Zero to <%= @address %> is sold at:</h3>
+  <ul>
+    <% @coke_dealers.businesses.each do |result| %>
+      <li><%= result.name %></li>
+    <% end %>
+  </ul>
   <% end %>
-</ul>
-
-<% end %>

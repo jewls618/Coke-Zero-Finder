@@ -13,3 +13,30 @@
  *= require_tree .
  *= require_self
  */
+body {
+  color: red;
+  background: url("http://anima.lemerg.com/data/uploads/11/765018.jpg") no-repeat;
+  text-align: right;
+  background-color: black;
+  margin-right: 150px;
+}
+
+h1 {
+  background-color: black;
+  font-size: 4rem;
+  background-color: transparent;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+form {
+  font-size: 2rem;
+}
+
+ul {
+  display: inline;
+  color: white;
+  font-size: 2rem;
+}
