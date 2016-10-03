@@ -7,18 +7,18 @@ class CokeZeroController < ApplicationController
   end
 
   def create
+    @street = params[:a]
+    @city = params[:c]
+    @state = params[:s]
+    @zip = params[:z]
+    @output = "#{@street.strip}, #{@city.strip}, #{@state.strip}, #{@zip.strip}"
 
-
-    @address = params["q"]
-
-    if !@address.empty?
+    if !@output.empty?
       params = {
         term: 'Coke Zero',
         limit: 5,
       }
-      @coke_dealers = Yelp.client.search(@address, params)
-    else
-      @address = @noaddress
+      @coke_dealers = Yelp.client.search(@output, params)
     end
 
     render :index
