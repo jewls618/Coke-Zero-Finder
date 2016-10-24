@@ -15,9 +15,9 @@
  */
 body {
   color: red;
-  background: url("http://anima.lemerg.com/data/uploads/11/765018.jpg") no-repeat;
+  background: url("http://s3.amazonaws.com/etntmedia/media/images/ext/521767222/coke-zero.jpg") no-repeat;
   text-align: right;
-  background-color: black;
+  background-color: white;
   margin-right: 150px;
 }
 
@@ -37,6 +37,6 @@ form {
 
 ul {
   display: inline;
-  color: white;
+  color: red;
   font-size: 2rem;
 }

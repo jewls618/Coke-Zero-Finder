@@ -23,5 +23,4 @@ class CokeZeroController < ApplicationController
 
     render :index
   end
-
 end

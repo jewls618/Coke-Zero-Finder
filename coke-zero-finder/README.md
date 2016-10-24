@@ -1,26 +1,23 @@
-# README
+#Coke Zero Finder
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+#Heroku Link
 
-* Ruby version
+https://coke-zero-finder.herokuapp.com/
 
-* System dependencies
 
-* Configuration
+#Description
 
-* Database creation
+Do you despise the taste of Pepsi? Do you immediately leave a restaurant as soon as you find out they sell Pepsi instead of Coke? Then you've come to the right place.
 
-* Database initialization
 
-* How to run the test suite
+#Ruby version
 
-* Services (job queues, cache servers, search engines, etc.)
+Ruby version 2.3.1
 
-* Deployment instructions
 
-* ...
-
-* empty commit
+#Technologies Utilized
+- Ruby on Rails
+- Yelp API
+- Heroku for hosting
+- CSS
